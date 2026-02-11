@@ -1,3 +1,32 @@
+# Application Configuration
 spring:
   application:
-    name: apiTurnos
+    name: api-gestion-turnos
+
+  # Database Configuration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/gestion_turnos
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  # JPA/Hibernate Configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+# Server Configuration
+server:
+  port: 8080
+
+# Logging Configuration
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    com.example.apiTurnos: DEBUG
