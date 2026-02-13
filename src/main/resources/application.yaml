@@ -5,9 +5,9 @@ spring:
 
   # Database Configuration
   datasource:
-    url: jdbc:postgresql://localhost:5432/gestion_turnos
+    url: jdbc:postgresql://localhost:5432/gestion-turnos
     username: postgres
-    password: postgres
+    password: 1234
     driver-class-name: org.postgresql.Driver
 
   # JPA/Hibernate Configuration
