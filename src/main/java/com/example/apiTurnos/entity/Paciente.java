@@ -27,11 +27,11 @@ public class Paciente {
     @NotBlank(message = "Obligatorio el apellido")
     private String apellido;
     @NotBlank(message = "Obligatorio el DNI")
-    private int dni;
+    private String dni;
     @NotBlank(message = "Obligatorio el email")
     private String email;
     @NotBlank(message = "Obligatorio el numero de telefono")
-    private int phone;
+    private String phone;
 
 
 

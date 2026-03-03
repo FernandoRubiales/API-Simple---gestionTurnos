@@ -35,7 +35,7 @@ public class Turnos {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "estado_id", nullable = false)
     @NotNull(message = "El estado del turno es obligatorio")
-    private EstadoTurno estadoTruno;
+    private EstadoTurno estadoTurno;
 
 
 }

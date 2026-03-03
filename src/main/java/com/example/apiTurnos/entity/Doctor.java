@@ -22,7 +22,7 @@ public class Doctor {
     private Long id;
 
     @NotBlank(message = "Obligatorio la matricula")
-    private int matricula;
+    private String matricula;
     @NotBlank(message = "Obligatorio el nombre")
     private String nombre;
     @NotBlank(message = "Obligatorio el apellido")
