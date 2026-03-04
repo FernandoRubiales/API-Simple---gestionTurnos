@@ -23,6 +23,8 @@ public class EstadoTurno {
     private Long id;
 
     @NotBlank(message = "Obligatorio el nombre")
-    private String nombre;
+    private String nombreEstado;
+
+
     private LocalDateTime fechaHoraBajaTurno;
 }
