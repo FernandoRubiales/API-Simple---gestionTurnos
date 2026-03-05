@@ -8,7 +8,7 @@ import java.util.Optional;
 
 @Repository
 public interface EstadoTurnoRepository extends JpaRepository<EstadoTurno, Long> {
-    Optional<EstadoTurno> findByNombre(String nombre);
+    Optional<EstadoTurno> findByNombreEstado(String nombreEstado);
 
-    boolean existsByNombre(String nombre);
+    boolean existsByNombreEstado(String nombreEstado);
 }
