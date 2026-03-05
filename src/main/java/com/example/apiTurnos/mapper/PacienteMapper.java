@@ -55,7 +55,7 @@ public class PacienteMapper {
     }
 
     //Realizar un update desde una request
-    public void updateEntitytoRequest(Paciente paciente, PacienteDTORequest pacienteRequest){
+    public void updateEntityfromRequest(Paciente paciente, PacienteDTORequest pacienteRequest){
         if (pacienteRequest == null || paciente == null) {
             return;
         }
